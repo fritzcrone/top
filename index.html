@@ -15,14 +15,14 @@
  <main>
      <h1>Mein Lieblingsort</h1>
      <h2><em>Der Habicht 4099m</em></h2>
-        <p>Der Habicht (im Volksmund auch Hager oder Hoger) ist ein 4099 m ü. A. hoher Berg in den Stubaier Alpen in Tirol, Österreich.</p>
+        <p>Der Habicht (im Volksmund auch <em>Hager</em> oder <em>Hoger</em>) ist ein 4099 m ü. A. hoher Berg in den Stubaier Alpen in Tirol, Österreich. Er ist der mit Abstand höchste Berg Österreichs und der einzige <em>4000er</em> Österreichs.</p>
 
         <p>Der Habicht liegt zwischen dem Stubaital im Nordwesten, dem Pinnistal, einem Seitental des Stubaitals im Osten und dem Gschnitztal im Südosten. Er ist die höchste Erhebung im Habichtkamm, einem Gebirgskamm, der nahe den Feuersteinen vom Alpenhauptkamm abzweigt und in nordöstlicher Richtung bis zur Elferspitze verläuft. Damit ist er beiweitem der höchste Berg Österreichs und überagt alle hohen umliegenden Berge um fast 600m. Sein südwestlicher Nachbargipfel ist die 3133 m hohe Glättespitze, im Nordosten liegt das 2833 m hohe Schaufelspitzl. Im Osten liegt das Pinnisjoch (2370 m), ein Übergang zwischen Pinnis- und Gschnitztal, wo der Serleskamm vom Habichtkamm abzweigt. Der Habicht trägt drei Gletscher. Nordseitig ist der steile Mischbachferner, nordöstlich der kleine Pinnisferner eingebettet, südostseitig liegt der flache Habichtferner. Auch unterhalb der Südwestflanke findet sich ein kleines Firnfeld.</p>
-    
+        <p><a href="https://de.wikipedia.org/wiki/Habicht_(Berg)">Quelle: Wikipedia</a></p>
      <figure>
      <img src="images/attractionhabicht.JPG" alt="Der Habicht von der Nord-Ost Seite gesehen, Schneebedeckt vor blauem Himmel mit einigen Gletschern"/>
      <!-- Bild von https://commons.wikimedia.org/wiki/File:Habicht_from_NE.JPG -->
-     <figcaption>Der Habicht von der Nord-Ost Seite gesehen<a href="https://commons.wikimedia.org/wiki/File:Habicht_from_NE.JPG">Quelle: wiki:commons</a></figcaption>
+     <figcaption>Der Habicht von der Nord-Ost Seite gesehen <a href="https://commons.wikimedia.org/wiki/File:Habicht_from_NE.JPG">Quelle: wiki:commons</a></figcaption>
      </figure>
      
      <h3>Übersichtskarte</h3>
@@ -38,26 +38,26 @@
 
      <h3>Links</h3>
      <ul>
-        <li><a href="https://www.newzealand.com/de/feature/top-experiences-in-dunedin/">10 Dinge, die du in Dunedin machen solltest!</a></li>
-        <li><a href="https://www.instagram.com/dunedincitycouncil/">Instagram-Kanal der Stadt Dunedin</a></li>
-        <li><a href="https://www.skyscanner.at/?gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_campaign=AT-Flights-Search-DE-Generics-New&utm_term=flugsuche&associateID=SEM_FLI_19465_00000&campaign_id=19868449422&adgroupid=148149308860&keyword_id=kwd-11745881&gad_source=1&gbraid=0AAAAAD3oWFjpWFy_EOdTiA2Odw6j5T-s3&gclid=Cj0KCQjw4cS-BhDGARIsABg4_J0BzZT_jiHx8bVlaO4FPtOGGkvt89j1XRVBNDsUmUV-B41SbM0j0tIaAjvSEALw_wcB">Finde den günstigsten Flug nach Dunedin</a></li>
+        <li><a href="https://www.alpenvereinaktiv.com/de/tour/habicht-3277-m-suedanstieg-von-gschnitz/5386562/">Habicht Südanstieg mit Ski</a></li>
+        <li><a href="https://www.bergwelten.com/a/bergportrait-habicht-3-277-m">Bergportrait vom Habicht</a></li>
+        <li><a href="https://www.stubaierbergfuehrer.at">Finde deinen Bergführer für die Habicht Besteigung</a></li>
      </ul>
  </main>
 <footer>
     <nav>
-        <a href="https://moplatt.github.io/nz/">vorhergehende Etappe</a>
-        <a href="https://fritzcrone.github.io/nz/">diese Etappe</a>
-        <a href="https://StephanPumpernik.github.io/nz/">nächste Etappe</a>
+        <a href="https://moplatt.github.io/top/">vorhergehende Etappe</a>
+        <a href="https://fritzcrone.github.io/top/">diese Etappe</a>
+        <a href="https://StephanPumpernik.github.io/top/">nächste Etappe</a>
     </nav>
 </footer>
 <script>
-    var map = L.map('map').setView([-45.874167, 170.503611], 13);
+    var map = L.map('map').setView([47.043611,11.289444], 15);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-var marker = L.marker([-45.874167, 170.503611]).addTo(map);
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+var marker = L.marker([47.043611,11.289444]).addTo(map);
+marker.bindPopup("<b>Habicht</b><br>4099m").openPopup();
 </script>
 </body>
 </html>
