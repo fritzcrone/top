@@ -12,7 +12,6 @@ let stop = {
 };
 
 const STOPS = [
-
     {
         lat: -34.423889,
         lng: 172.6775,
@@ -71,11 +70,11 @@ const STOPS = [
     },
     {
         nr: 8,
-        title: "Tongariro Nationalpark",
+        title: "La Push",
         user: "webmapping",
-        lat: -39.2,
-        lng: 175.583333,
-        zoom: 11,
+        lat: 47.908683,
+        lng: -124.636604,
+        zoom: 13,
     },
     {
         nr: 9,
@@ -157,17 +156,17 @@ const STOPS = [
         lng: 167.88,
         zoom: 9,
     },
-    {
-        nr: 23,
-        title: "Dunedin",
-        user: "fritzcrone",
-        lat: -45.874167,
-        lng: 170.503611,
-        zoom: 13
-    },
+{
+    nr: 23,
+    title: "Habicht",
+    user: "fritzcrone",
+    lat: 47.043611,
+    lng: 11.289444,
+    zoom: 15
+},
     {
         nr: 24,
-        titel: "Moeraki Boulders",
+        title: "Moeraki Boulders",
         user: "StephanPumpernik",
         lat: -45.345275,
         lng: 170.826061,
