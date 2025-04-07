@@ -212,7 +212,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-// Loop ber Etappen
+// Maßstab 
+L.control.scale({
+    imperial: false,
+}).addTo(map);
+
+// Loop der Etappen
 for (let i = 0; i < STOPS.length; i++) {
     console.log(STOPS[i]);
     // Marker zeichnen
