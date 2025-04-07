@@ -218,7 +218,7 @@ L.control.layers({
     "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
     "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery'),
 }, {
-    "Etappen": overlays.etappen
+    "Etappen": overlays.etappen,
 }).addTo(map);
 
 // Maßstab 
