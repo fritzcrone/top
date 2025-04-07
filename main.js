@@ -207,9 +207,16 @@ console.log(STOPS[0].title);
 let map = L.map('map');
 
 // Hintergrundkarte definieren
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+/*L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);*/
+
+// Layercontrol
+L.control.layers({
+    "OSM Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
+    "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
+    "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery'),
 }).addTo(map);
 
 // Maßstab 
