@@ -207,11 +207,18 @@ console.log(STOPS[0].title);
 // Karte initialisieren
 let map = L.map('map');
 
+// Overlays definieren
+let overlays = {
+    etappen: L.featureGroup().addTo(map),
+}
+
 // Layercontrol
 L.control.layers({
     "OSM Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
     "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
     "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery'),
+}, {
+    "Etappen": overlays.etappen
 }).addTo(map);
 
 // Maßstab 
@@ -223,7 +230,7 @@ L.control.scale({
 for (let i = 0; i < STOPS.length; i++) {
     console.log(STOPS[i]);
     // Marker zeichnen
-    let marker = L.marker([STOPS[i].lat, STOPS[i].lng]).addTo(map);
+    let marker = L.marker([STOPS[i].lat, STOPS[i].lng]).addTo(overlays.etappen);
 
     // Popup definieren und öffnen
     marker.bindPopup(`
